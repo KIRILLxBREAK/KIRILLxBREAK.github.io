@@ -8,3 +8,4 @@ function mapClicked() {
 		attribution: '&amp;copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
 }
+
