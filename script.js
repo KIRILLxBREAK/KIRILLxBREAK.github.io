@@ -9,3 +9,6 @@ function mapClicked() {
 	}).addTo(map);
 }
 
+$(document).ready(function() {
+	$('#but').click(mapClicked());
+})
