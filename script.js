@@ -8,7 +8,7 @@ function mapClicked() {
 		attribution: '&amp;copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
 	
-	L.marker([51.5, -0.09]).addTo(map)
+	L.marker([55.432, 37.654]).addTo(map)
 		.bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
     		.openPopup();
 }
