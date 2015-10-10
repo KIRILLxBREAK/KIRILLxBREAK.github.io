@@ -10,5 +10,5 @@ function mapClicked() {
 }
 
 $(document).ready(function() {
-	$('#but').click(mapClicked);
+	mapClicked();
 })
