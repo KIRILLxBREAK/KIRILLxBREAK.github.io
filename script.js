@@ -9,7 +9,7 @@ function mapClicked() {
 	}).addTo(map);
 	
 	L.marker([41.38879, 2.15899]).addTo(map)
-		.bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+		.bindPopup('A first travel point.<br> Easily customizable.')
     		.openPopup();
 }
 
