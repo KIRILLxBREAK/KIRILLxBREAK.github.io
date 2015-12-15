@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
     <!--<link type="text/css" rel="stylesheet" href="stylesheet.css" />-->
     <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+    
     <style type="text/css">
         #map { height: 200px; }
     </style>
@@ -18,7 +19,24 @@
         <INPUT id="but" Type="BUTTON" Value="About Me" />
     </FORM>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <!--<script src="script.js"></script>-->
+    <script>
+        function mapClicked() {
+		var map = L.map('map').setView([41.38879, 2.15899], 13);
+ 
+		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+		    attribution: '&amp;copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	    }).addTo(map);
+	
+	    L.marker([41.38879, 2.15899]).addTo(map)
+	    	.bindPopup('A first travel point.<br> Easily customizable.')
+    		.openPopup();
+        }
+
+        $(document).ready(function() {
+    	mapClicked();
+        })
+    </script>
 </body>
 
 </html>
